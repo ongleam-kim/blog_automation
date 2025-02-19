@@ -19,7 +19,7 @@ Author Url:   https://www.vietrick.com
 
 /*
 <!-- Variable definitions -->
-<Variable name="keycolor" description="Main Color" type="color" default="#1A73E8" value="#1A73E8"/>
+<Variable name="keycolor" description="Main Color" type="color" default="#1A73E8" value="#000000"/>
 <Group description="Theme Options">
     <Variable name="darkmode" description="Native Dark Mode" type="length" default="0px" min="0px" max="1px" value="0px"/>
     <Variable name="userdarkmode" description="User Dark Mode" type="length" default="1px" min="0px" max="1px" value="1px"/>
@@ -50,26 +50,26 @@ Author Url:   https://www.vietrick.com
     <Variable name="text.font" description="Text Font" type="font" family="Quicksand" default="normal 400 14px $(family)"  value="normal 400 14px $(family)"/>
 </Group>
 <Group description="Background">
-    <Variable name="background.color" description="Body Background" type="color" default="#FFF"  value="#FFFFFF"/>
+    <Variable name="background.color" description="Body Background" type="color" default="#FFF"  value="#ffffff"/>
     <Variable name="body.background" description="Background" type="background" color="$(background.color)" default="$(color) none repeat fixed top left" value="$(color) none repeat fixed top left"/>
-    <Variable name="outer.bg" description="Outer Background" type="color" default="#F2F2F2"  value="#F0F2F5"/>
-    <Variable name="outer.mobile.bg" description="Outer Mobile Background" type="color" default="#F2F2F2"  value="#F0F2F5"/>
+    <Variable name="outer.bg" description="Outer Background" type="color" default="#F2F2F2"  value="#ececec"/>
+    <Variable name="outer.mobile.bg" description="Outer Mobile Background" type="color" default="#F2F2F2"  value="#ececec"/>
 </Group>
 <Group description="Theme Colors">
-    <Variable name="main.color" description="Theme Color" type="color" default="#FF3152" value="#ff7a18"/>
-    <Variable name="title.color" description="Title Color" type="color" default="#202124" value="#202124"/>
+    <Variable name="main.color" description="Theme Color" type="color" default="#FF3152" value="#0fff50"/>
+    <Variable name="title.color" description="Title Color" type="color" default="#202124" value="#000000"/>
     <Variable name="title.hover.color" description="Title Hover Color" type="color" default="$(main.color)" value="#1A73E8"/>
-    <Variable name="meta.color" description="Meta Color" type="color" default="#959595" value="#959595"/>
-    <Variable name="text.color" description="Text Color" type="color" default="#757575"  value="#474747"/>
-	<Variable name="accent.color" description="Accent Color" type="color" default="#0066cc"  value="#0066cc"/>
+    <Variable name="meta.color" description="Meta Color" type="color" default="#959595" value="#838383"/>
+    <Variable name="text.color" description="Text Color" type="color" default="#757575"  value="#515151"/>
+	<Variable name="accent.color" description="Accent Color" type="color" default="#0066cc"  value="#0d0001"/>
 </Group>
 <Group description="Site Header" selector="#header-wrapper">
-    <Variable name="header.bg" description="Header Background" type="color" default="#FFFFFF" value="#FFFFFF"/>
+    <Variable name="header.bg" description="Header Background" type="color" default="#FFFFFF" value="#ffffff"/>
     <Variable name="header.color" description="Header Color" type="color" default="$(title.color)" value="#050505"/>
     <Variable name="header.hover.color" description="Header Hover Color" type="color" default="$(main.color)" value="#1A73E8"/>
 </Group>
 <Group description="Sub Menu">
-    <Variable name="submenu.bg" description="Sub Menu Background" type="color" default="#FFFFFF" value="#FFFFFF"/>
+    <Variable name="submenu.bg" description="Sub Menu Background" type="color" default="#FFFFFF" value="#ffffff"/>
     <Variable name="submenu.color" description="Sub Menu Color" type="color" default="$(title.color)" value="#202124"/>
     <Variable name="submenu.hover.color" description="Sub Menu Hover Color" type="color" default="$(main.color)" value="#1A73E8"/>
 </Group>
@@ -88,7 +88,7 @@ Author Url:   https://www.vietrick.com
 </Group>
 <Group description="Theme Widgets" select="#sidebar">
     <Variable name="wtitle.color" description="Widget Title Color" type="color" default="$(title.color)" value="#202124"/>
-	<Variable name="widget.bg" description="Widget Background" type="color" default="#FFFFFF" value="#FFFFFF"/>
+	<Variable name="widget.bg" description="Widget Background" type="color" default="#FFFFFF" value="#ffffff"/>
 </Group>
 <Group description="Post Styles" select="#main">
     <Variable name="post.title.color" description="Post Title Color" type="color" default="$(title.color)" value="#202124"/>
@@ -108,8 +108,8 @@ Author Url:   https://www.vietrick.com
     <Variable name="footerad.onpost" description="Show on Post Page" type="length" default="1px" min="0px" max="1px" value="1px"/>
 </Group>
 <Group description="Theme Footer" selector="#footer-wrapper">
-    <Variable name="footer.bg" description="Footer Background" type="color" default="#5ca2d2" value="#5ca2d2"/>
-    <Variable name="footer.color" description="Footer Color" type="color" default="#f6f7f8" value="#f6f7f8"/>
+    <Variable name="footer.bg" description="Footer Background" type="color" default="#5ca2d2" value="#ca4157"/>
+    <Variable name="footer.color" description="Footer Color" type="color" default="#f6f7f8" value="#f3eff0"/>
     <Variable name="footer.hover.color" description="Footer Hover Color" type="color" default="$(main.color)" value="#1A73E8"/>
 </Group>
 <Group description="FooterBar" selector=".footerbar">
@@ -118,14 +118,14 @@ Author Url:   https://www.vietrick.com
     <Variable name="footerbar.hover.color" description="FooterBar Hover Color" type="color" default="$(main.color)" value="#1A73E8"/>
 </Group>
 <Group description="Cookie Consent" selector="#gnews-pro-cookie-ify">
-    <Variable name="cookie.bg" description="Cookie Background" type="color" default="#FFFFFF" value="#FFFFFF"/>
+    <Variable name="cookie.bg" description="Cookie Background" type="color" default="#FFFFFF" value="#ffffff"/>
     <Variable name="cookie.color" description="Cookie Text Color" type="color" default="$(text.color)" value="#3C4043"/>
 </Group>
 <Group description="Theme Buttons">
     <Variable name="button.bg" description="Button Background" type="color" default="$(main.color)" value="#1A73E8"/>
-    <Variable name="button.color" description="Button Color" type="color" default="#FFFFFF" value="#FFFFFF"/>
-    <Variable name="button.hover.bg" description="Button Hover Background" type="color" default="#1767D0" value="#1767D0"/>
-    <Variable name="button.hover.color" description="Button Hover Color" type="color" default="#FFFFFF" value="#FFFFFF"/>
+    <Variable name="button.color" description="Button Color" type="color" default="#FFFFFF" value="#ffffff"/>
+    <Variable name="button.hover.bg" description="Button Hover Background" type="color" default="#1767D0" value="#8d1010"/>
+    <Variable name="button.hover.color" description="Button Hover Color" type="color" default="#FFFFFF" value="#ffffff"/>
 </Group>
 <Group description="Theme Fonts (Reset)">
     <!-- Site Font -->
@@ -154,7 +154,7 @@ Author Url:   https://www.vietrick.com
     <Variable name="textfont.bolditalic" description="Text Font Bold Italic" type="font" default="italic 700 14px $(text.font.family)" value="italic 700 14px $(family)"/>
 </Group>
 <!-- Hidden Variables -->
-<Variable name="body.background.color" description="Comments Background" hideEditor="true" type="color" default="transparent"  value="transparent"/>
+<Variable name="body.background.color" description="Comments Background" hideEditor="true" type="color" default="transparent"  value="rgba(0,0,0,0)"/>
 <Variable name="body.title.color" description="Comments Color" hideEditor="true" type="color" default="$(title.color)" value="#202124"/>
 <Variable name="body.text.color" description="Comments Text Color" hideEditor="true" type="color" default="$(text.color)"  value="#3C4043"/>
 <Variable name="body.link.color" description="Comments Link Color" hideEditor="true" type="color" default="$(main.color)"  value="#1A73E8"/>
@@ -205,7 +205,7 @@ body{position:relative;background:var(--body-bg);background-color:var(--body-bg-
 .hero-post .hero-post{position:relative;float:left;width:100%;margin:0 0 2rem;display:grid;grid-template-columns:50% 50%;color:var(--card-color);border-radius:8px;z-index:1;overflow:hidden;box-shadow:var(--box-shadow)}.hero-post .entry-image-wrap:before,.index-post .entry-image-wrap:before{pointer-events:none;background:linear-gradient(130deg,#ff7a18,#af002d 41.07%,#319197 76.05%);position:absolute;mix-blend-mode:screen;opacity:.35;width:120%;min-height:500px;height:100%;z-index:2}.hero-post .entry-image-wrap:after{pointer-events:none;content:"";position:absolute;z-index:3;left:75%;height:100%;top:0;width:26%;background:var(--card-grd)}.hero-post .entry-image-wrap{float:left;width:100%;height:100%;background-color:rgba(155,155,155,.05);z-index:1;margin:0}.hero-post .entry-image-wrap span{width:100%;height:100%}.hero-post .flex-center{background:var(--content-bg);width:100%;height:100%;margin:0}.hero-post .entry-header-wrap{display:flex;align-items:flex-start}.hero-post .entry-header{overflow:hidden;z-index:5;padding:3rem;margin:0}.hero-post .entry-header p{margin-bottom:1.5rem;font-size:1.2rem}.rtl .hero-post .entry-header{left:unset;right:0}.hero-post .entry-meta{display:inline-block;font-size:13px;margin:0 0 10px}.hero-post .entry-title{font-size:2.5rem;line-height:1.3;margin-bottom:1.5rem}.hero-post .author-avatar-wrap{float:left}.hero-post .author-name{line-height:26px;font-weight:600}.hero-post .hero-rm a{display:inline-block;font-size:13px;color:var(--main-color);font-weight:500;text-transform:uppercase;margin:12px 0 0}.hero-post .hero-rm a:after{display:inline-block;content:'\f30b';font-family:'Font Awesome 5 Free';font-weight:900;padding:0 5px;transition:all .17s ease}.rtl .hero-post .hero-rm a:after{content:'\f30a'}.hero-post .hero-rm a:hover:after{padding:0 7px}.hero-post.is-video .entry-title a:before{display:inline-block;content:"\f62b";font-family:bootstrap-icons!important;color:red;vertical-align:-.125em;margin:0 8px 0 0}.rtl .hero-post.is-video .entry-title a:before{margin:-4px 0 0 10px}#featured .widget,#featured .widget-content,#featured-wrapper{position:relative;float:left;width:100%;margin:0}#featured .widget{display:none;margin:30px 0 0}#featured .widget.HTML,#featured .widget.PopularPosts,#featured .widget.is-visible{display:block}#featured .widget.PopularPosts .widget-content{display:flex;align-items:center;justify-content:center;min-height:200px;margin:0}#featured .error-msg{padding:0}.featured-items{position:relative;float:left;width:100%;display:grid;grid-template-columns:repeat(3,1fr);grid-gap:20px}.featured-item{position:relative;width:100%;height:200px}.featured-inner{position:relative;width:100%;height:100%;display:flex;flex-direction:column;z-index:11;overflow:hidden;border-radius:var(--radius)}.featured-item .entry-image-wrap{width:100%;height:100%}.featured-item .entry-title{font-size:19px}.featured-item .entry-meta{flex-wrap:wrap}
 
 /*! AJAX */
-.title-wrap{position:relative;float:left;width:100%;display:flex;align-items:center;justify-content:space-between;margin:0 0 16px}.title-wrap>*{display:flex;align-items:center}.title-wrap>.title{font-family:var(--title-font);font-size:18px;color:var(--widget-title-color);font-weight:700;margin:0}.title-wrap>.title:after{content:"\f285";font-family:bootstrap-icons;font-size:10px;font-weight:900;line-height:1;margin:2px 0 0 3px}.rtl .title-wrap>.title:after{content:"\f285";margin:2px 3px 0 0}.title-wrap>a.wt-l{font-size:12px;color:var(--meta-color);font-weight:400;line-height:1}.title-wrap>a.wt-l:hover{color:var(--main-color)}.content-section,.content-section .content-block,.content-section .widget,.content-section .widget-content{position:relative;float:left;width:100%;margin:0}.content-section .widget{display:none;margin:0 0 30px}.content-section .widget.is-ad,.content-section .widget.is-visible{display:block}#content-section-2 .widget:last-child{margin:0}.content-section .loader{height:200px}.block-items{display:grid;grid-template:"prm1 prm1 prm2" "snd1 snd2 snd3"/1fr 1fr 1fr;gap:1.5rem;padding:1.5rem;background:var(--body-bg-color);border-radius:var(--box-radius);box-shadow:var(--box-shadow)}.block-items .block-item.item-0{grid-area:prm1}.block-items .block-item.item-1{grid-area:prm2;border-radius:var(--radius) var(--radius) 0 0;background-image:var(--block-linear-bg)}.block-items .block-item.item-2{grid-area:snd1}.block-items .block-item.item-3{grid-area:snd2}.block-items .block-item.item-4{grid-area:snd3}.block-items .entry-header{display:flex;flex-direction:column;flex:1}.block-items .block-item.item-1 .entry-header{overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:7;padding:.5rem 1rem}.block-items .entry-header .entry-meta{font-size:10px}.block-items .entry-header .entry-meta .cmt-count:before{content:'-';margin-right:4px}.block-items .entry-header .entry-title{font-size:1.1rem;padding:.4rem 0}.block-items .block-item.item-0 .entry-header .entry-title{font-size:1.4rem}.block-items .entry-image-wrap{width:100%;margin:0 12px 0 0;border-radius:var(--radius)}.grid-items{display:grid;grid-template-columns:repeat(3,1fr);grid-gap:20px}.grid-item{position:relative;background-color:var(--post-card-bg);display:flex;flex-direction:column;overflow:hidden;box-shadow:var(--box-shadow);border-radius:var(--box-radius)}.grid-item .entry-image-wrap{width:100%;border-radius:var(--radius) var(--radius) 0 0}.grid-item .entry-header{padding:13px 16px}.grid-item .entry-title{font-size:15px}.list-items{display:flex;flex-direction:column}.content-block.list-items .entry-thumb{border:1px solid var(--border-color);border-radius:var(--radius)}.list-item{position:relative;width:100%;background-color:var(--post-card-bg);display:flex;padding:16px;margin:20px 0 0;box-shadow:var(--box-shadow);border-radius:var(--box-radius)}.list-item.item-0{margin:0}.list-item .entry-image-wrap{width:200px;margin:0 16px 0 0;border-radius:var(--radius)}.rtl .list-item .entry-image-wrap{margin:0 0 0 16px}.list-item .entry-header{display:flex;flex-direction:column;flex:1;margin:0}.list-item .entry-title{font-size:20px;margin:0}.list-item .entry-excerpt{font-size:14px;color:var(--text-color);margin:8px 0}.list-item .entry-meta{flex-wrap:wrap;font-size:12px;margin-top:auto}.video-items{display:grid;grid-template-columns:repeat(3,1fr);grid-gap:20px}.video-item{position:relative;background-color:var(--post-card-bg);display:flex;flex-direction:column;overflow:hidden;box-shadow:var(--box-shadow);border-radius:var(--box-radius)}.video-item .entry-image-wrap{width:100%;border-radius:var(--radius) var(--radius) 0 0}.video-item .entry-header{padding:13px 16px}.video-item .entry-title{font-size:15px}
+.title-wrap{position:relative;float:left;width:100%;display:flex;align-items:center;justify-content:space-between;margin:0 0 16px}.title-wrap>*{display:flex;align-items:center}.title-wrap>.title{font-family:var(--title-font);font-size:18px;color:var(--widget-title-color);font-weight:700;margin:0}.title-wrap>.title:after{content:"\f285";font-family:bootstrap-icons;font-size:10px;font-weight:900;line-height:1;margin:2px 0 0 3px}.rtl .title-wrap>.title:after{content:"\f285";margin:2px 3px 0 0}.title-wrap>a.wt-l{font-size:16px;font-weight: bold;transition: color 0.3s;color:var(--meta-color);font-weight:400;line-height:1}.title-wrap>a.wt-l:hover{color:#333333; font-size:16px;}.content-section,.content-section .content-block,.content-section .widget,.content-section .widget-content{position:relative;float:left;width:100%;margin:0}.content-section .widget{display:none;margin:0 0 30px}.content-section .widget.is-ad,.content-section .widget.is-visible{display:block}#content-section-2 .widget:last-child{margin:0}.content-section .loader{height:200px}.block-items{display:grid;grid-template:"prm1 prm1 prm2" "snd1 snd2 snd3"/1fr 1fr 1fr;gap:1.5rem;padding:1.5rem;background:var(--body-bg-color);border-radius:var(--box-radius);box-shadow:var(--box-shadow)}.block-items .block-item.item-0{grid-area:prm1}.block-items .block-item.item-1{grid-area:prm2;border-radius:var(--radius) var(--radius) 0 0;background-image:var(--block-linear-bg)}.block-items .block-item.item-2{grid-area:snd1}.block-items .block-item.item-3{grid-area:snd2}.block-items .block-item.item-4{grid-area:snd3}.block-items .entry-header{display:flex;flex-direction:column;flex:1}.block-items .block-item.item-1 .entry-header{overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:7;padding:.5rem 1rem}.block-items .entry-header .entry-meta{font-size:10px}.block-items .entry-header .entry-meta .cmt-count:before{content:'-';margin-right:4px}.block-items .entry-header .entry-title{font-size:1.1rem;padding:.4rem 0}.block-items .block-item.item-0 .entry-header .entry-title{font-size:1.4rem}.block-items .entry-image-wrap{width:100%;margin:0 12px 0 0;border-radius:var(--radius)}.grid-items{display:grid;grid-template-columns:repeat(3,1fr);grid-gap:20px}.grid-item{position:relative;background-color:var(--post-card-bg);display:flex;flex-direction:column;overflow:hidden;box-shadow:var(--box-shadow);border-radius:var(--box-radius)}.grid-item .entry-image-wrap{width:100%;border-radius:var(--radius) var(--radius) 0 0}.grid-item .entry-header{padding:13px 16px}.grid-item .entry-title{font-size:15px}.list-items{display:flex;flex-direction:column}.content-block.list-items .entry-thumb{border:1px solid var(--border-color);border-radius:var(--radius)}.list-item{position:relative;width:100%;background-color:var(--post-card-bg);display:flex;padding:16px;margin:20px 0 0;box-shadow:var(--box-shadow);border-radius:var(--box-radius)}.list-item.item-0{margin:0}.list-item .entry-image-wrap{width:200px;margin:0 16px 0 0;border-radius:var(--radius)}.rtl .list-item .entry-image-wrap{margin:0 0 0 16px}.list-item .entry-header{display:flex;flex-direction:column;flex:1;margin:0}.list-item .entry-title{font-size:20px;margin:0}.list-item .entry-excerpt{font-size:14px;color:var(--text-color);margin:8px 0}.list-item .entry-meta{flex-wrap:wrap;font-size:12px;margin-top:auto}.video-items{display:grid;grid-template-columns:repeat(3,1fr);grid-gap:20px}.video-item{position:relative;background-color:var(--post-card-bg);display:flex;flex-direction:column;overflow:hidden;box-shadow:var(--box-shadow);border-radius:var(--box-radius)}.video-item .entry-image-wrap{width:100%;border-radius:var(--radius) var(--radius) 0 0}.video-item .entry-header{padding:13px 16px}.video-item .entry-title{font-size:15px}
 
 /*! Blog */
 #main .Blog,#main-wrapper #main{position:relative;float:left;width:100%;margin:0}.is-home #main-wrapper.has-cs2 #main{margin:0 0 30px}.blog-posts-wrap{position:relative;float:left;width:100%}.queryMessage{float:left;width:100%}.Blog.no-posts .queryMessage,.queryMessage .query-info{margin:0}.queryMessage .query-info{position:relative;float:left;width:100%;display:flex;align-items:center;font-family:var(--title-font);font-size:16px;color:var(--widget-title-color);font-weight:700;margin:0 0 16px}.queryMessage .query-info:after{content:"\f285";font-family:bootstrap-icons;font-size:10px;font-weight:900;line-height:1;margin:1px 0 0 3px}.rtl .queryMessage .query-info:after{content:"\f285";margin:1px 3px 0 0}.queryEmpty{float:left;width:100%;font-size:14px;color:var(--text-color);font-weight:400;text-align:center;margin:50px 0}.index-post-wrap{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:calc(var(--gap)*2/3);margin:0 0 var(--gap);width:100%}.no-posts .index-post-wrap{display:none}.blog-post{display:block;word-wrap:break-word}.index-post{background:var(--post-card-bg);color:var(--text-color);border-radius:8px;position:relative;z-index:1;overflow:hidden;box-shadow:var(--box-shadow);display:flex;flex-direction:column}.index-post.ad-type{display:block;background-color:transparent;padding:0;border:0;border-radius:0}.index-post-wrap .index-post:last-child{margin:0}.index-post .entry-image-wrap{width:100%;margin:0}.rtl .index-post .entry-image-wrap{margin:0 0 0 16px}.index-post .entry-header{flex:1;position:relative;z-index:5;padding:1.5rem;display:flex;flex-direction:column}.index-post .entry-title{font-size:clamp(1.6rem,calc(1.6rem + .2vw),2.8rem);letter-spacing:-.05rem;font-weight:700;margin:0 0 1.5rem;line-height:1.2}.index-post .entry-meta{flex-wrap:wrap;font-size:10px;margin:0 0 8px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}.inline-ad-wrap{position:relative;float:left;width:100%;margin:0}.inline-ad{position:relative;float:left;width:100%;text-align:center;line-height:1;margin:0}.post-animated{-webkit-animation-duration:.5s;animation-duration:.5s}@keyframes fadeInUp{from{opacity:0;transform:translate3d(0,10px,0)}to{opacity:1;transform:translate3d(0,0,0)}}.post-fadeInUp{animation-name:fadeInUp}.is-single .item-post,.item-post-inner,.item-post-wrap{position:relative;float:left;width:100%;margin:0}.item-post .blog-entry-header{position:relative;float:left;width:100%;display:flex;flex-direction:column}#breadcrumb{float:left;display:flex;width:100%;font-size:12px;color:var(--meta-color);font-weight:400;line-height:1;margin:0 0 .5rem}#breadcrumb a{color:var(--meta-color)}#breadcrumb a.home,#breadcrumb a:hover{color:var(--main-color)}#breadcrumb em:after{content:"\f285";font-family:bootstrap-icons;font-size:9px;font-weight:900;font-style:normal;vertical-align:middle;margin:0 4px}.rtl #breadcrumb em:after{content:"\f285"}.item-post h1.entry-title{position:relative;float:left;width:100%;font-size:$(itempost.title.size);font-weight:700;margin:0}.item-post .has-meta h1.entry-title{margin:1rem 0 1.5rem}.p-eh .entry-meta{flex-wrap:wrap;justify-content:space-between;font-size:clamp(12px,calc(.7rem + .25vw),20px);margin:0}.p-eh .entry-meta .align-left,.p-eh .entry-meta .align-right{display:flex;flex-wrap:wrap;align-items:center}.p-eh .entry-meta .mi,.p-eh .entry-meta .sp{margin:0 4px 0 0}.rtl .p-eh .entry-meta .mi,.rtl .p-eh .entry-meta .sp{margin:0 0 0 4px}.p-eh .entry-meta .entry-author{align-items:center}.p-eh .entry-meta .entry-author:before{display:none}.author-avatar-wrap,.p-eh .entry-meta .author-avatar-wrap{overflow:visible;width:30px;height:30px;padding:0;margin:0 5px 0 0;border-radius:100%;border:.2em solid var(--accent)}.rtl .p-eh .entry-meta .author-avatar-wrap{margin:0 0 0 5px}.p-eh .entry-meta .author-avatar{z-index:2;border-radius:50%}.p-eh .entry-meta .author-name{font-weight:600}.entry-meta .entry-comments-link{display:none;margin:0 0 0 10px}.rlt .entry-meta .entry-comments-link{margin:0 10px 0 0}.entry-meta .entry-comments-link:before{display:inline-block;content:"\f268";font-family:bootstrap-icons;font-size:14px;color:var(--meta-color);font-weight:400;margin:0 4px 0 0;transform:scale(-1,1)}.rtl .entry-meta .entry-comments-link:before{margin:0 0 0 4px}.entry-meta .entry-comments-link.show{display:block;color:var(--meta-color)}.entry-content-wrap{position:relative;float:left;width:100%;background:var(--body-bg-color);border-radius:var(--box-radius);box-shadow:var(--box-shadow);padding:4rem 4rem .5rem;margin:2rem 0 0}#post-body{position:relative;float:left;width:100%;font-family:var(--text-font);font-size:$(itempost.content.size);color:var(--post-text-color);line-height:1.6em;padding:0;margin:0}.post-body p{margin-bottom:1rem;margin-top:1rem}.post-body p+p{margin-top:0}.post-body h1,.post-body h2,.post-body h3,.post-body h4,.post-body h5,.post-body h6{font-size:17px;color:var(--title-color);line-height:1.3em;margin:0 0 1rem;font-weight:700}.post-body h1{font-size:26px}.post-body h2{font-size:23px;margin-top:2rem}.post-body h3{font-size:20px}.post-body h4{margin-top:1rem}.post-body h2+h3,.post-body h3+h4{margin-top:1rem}.post-body img{border-radius:$(post.img.border);height:auto!important}blockquote{position:relative;background-color:var(--rgba-gray);color:var(--title-color);font-style:normal;padding:1rem 1rem 1rem 4rem;margin:0;border-radius:var(--box-radius)}
@@ -1494,6 +1494,34 @@ body#layout #vtrick-pro-cta2-section > h4:after{content:' - Right Call to Action
       <main id='main-wrapper'>
         <b:class cond='(data:view.isHomepage and (data:widgets any w =&gt; w.sectionId == &quot;content-section-2&quot;))' name='has-cs2'/>
          <b:section class='content-section' cond='data:view.isLayoutMode or (data:view.isHomepage and (data:widgets any w =&gt; w.sectionId == &quot;content-section-1&quot;))' id='content-section-1' name='Content Section 1' showaddelement='yes'>
+           <b:widget id='AdSense2' locked='false' title='' type='AdSense' version='2' visible='true'>
+             <b:widget-settings>
+               <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
+               <b:widget-setting name='style.textcolor'>#ffffff</b:widget-setting>
+               <b:widget-setting name='style.layout'>728x90</b:widget-setting>
+               <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
+               <b:widget-setting name='style.urlcolor'>#ffffff</b:widget-setting>
+               <b:widget-setting name='style.linkcolor'>#ffffff</b:widget-setting>
+               <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
+             </b:widget-settings>
+             <b:includable id='main'>
+  <div class='widget-content'>
+    <b:if cond='data:adCode'>
+      <data:adCode/>
+    <b:else/>
+      <b:include name='defaultAdUnit'/>
+    </b:if>
+  </div>
+</b:includable>
+             <b:includable id='defaultAdUnit'>
+  <ins class='adsbygoogle' data-ad-format='auto' expr:data-ad-client='data:adClientId ?: data:blog.adsenseClientId' expr:data-ad-host='data:blog.adsenseHostId' expr:style='data:style ?: &quot;display: block;&quot;'>
+    <b:attr cond='not data:blog.analytics4' expr:value='data:blog.analyticsAccountNumber' name='data-analytics-uacct'/>
+  </ins>
+  <script>
+   (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</b:includable>
+           </b:widget>
            <b:widget id='HTML10' locked='false' title='Novel' type='HTML' version='2' visible='false'>
              <b:widget-settings>
                <b:widget-setting name='content'>{getContent} $results={5} $label={recent} $type={block}</b:widget-setting>
@@ -1541,10 +1569,10 @@ body#layout #vtrick-pro-cta2-section > h4:after{content:' - Right Call to Action
               <b:widget-setting name='showLocation'>false</b:widget-setting>
               <b:widget-setting name='postLabelsLabel'>Tags:</b:widget-setting>
               <b:widget-setting name='showTimestamp'>true</b:widget-setting>
-              <b:widget-setting name='postsPerAd'>3</b:widget-setting>
+              <b:widget-setting name='postsPerAd'>1</b:widget-setting>
               <b:widget-setting name='showBacklinks'>false</b:widget-setting>
               <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
-              <b:widget-setting name='showInlineAds'>true</b:widget-setting>
+              <b:widget-setting name='showInlineAds'>false</b:widget-setting>
               <b:widget-setting name='showReactions'>false</b:widget-setting>
             </b:widget-settings>
             <b:includable id='main' var='this'>
@@ -1928,7 +1956,10 @@ body#layout #vtrick-pro-cta2-section > h4:after{content:' - Right Call to Action
             <b:includable id='postBreadcrumbs' var='post'>
       <!-- Post Breadcrumbs -->
       <b:if cond='data:view.isPost'>
-        <b:if cond='data:skin.vars.breadcrumb == &quot;1px&quot;'><nav id='breadcrumb'><a class='home' expr:href='data:blog.homepageUrl'><data:messages.home/></a><b:if cond='data:post.labels'><em class='delimiter'/><a class='label' expr:href='data:post.labels.first.url'><data:post.labels.first.name/></a></b:if></nav></b:if>
+        <b:if cond='data:skin.vars.breadcrumb == &quot;1px&quot;'>
+        <!--  <nav id='breadcrumb'><a class='home' expr:href='data:blog.homepageUrl'><data:messages.home/></a><b:if cond='data:post.labels'><em class='delimiter'/><a class='label' expr:href='data:post.labels.first.url'><data:post.labels.first.name/></a></b:if></nav> -->
+        
+        </b:if>
         <script type='application/ld+json'>{&quot;@context&quot;:&quot;http://schema.org&quot;,&quot;@type&quot;:&quot;BreadcrumbList&quot;,&quot;itemListElement&quot;:[{&quot;@type&quot;:&quot;ListItem&quot;,&quot;position&quot;:1,&quot;name&quot;:&quot;<data:messages.home.jsonEscaped/>&quot;,&quot;item&quot;:&quot;<data:blog.homepageUrl.canonical.jsonEscaped/>&quot;},{&quot;@type&quot;:&quot;ListItem&quot;,&quot;position&quot;:2,&quot;name&quot;:&quot;<b:if cond='data:post.labels'><data:post.labels.first.name.jsonEscaped/><b:else/><data:messages.posts/></b:if>&quot;,&quot;item&quot;:&quot;<b:if cond='data:post.labels'><data:post.labels.first.url.canonical.jsonEscaped/><b:else/><b:eval expr='data:blog.homepageUrl.canonical.jsonEscaped + &quot;search/&quot;'/></b:if>&quot;},{&quot;@type&quot;:&quot;ListItem&quot;,&quot;position&quot;:3,&quot;name&quot;:&quot;<data:post.title.jsonEscaped/>&quot;,&quot;item&quot;:&quot;<data:post.url.canonical.jsonEscaped/>&quot;}]}</script>
       </b:if>
       <b:if cond='data:view.isPage'>
@@ -2363,7 +2394,7 @@ body#layout #vtrick-pro-cta2-section > h4:after{content:' - Right Call to Action
       <!-- Sidebar Wrapper -->
       <aside id='sidebar-wrapper'>
         <b:section class='sidebar vtrick-pro-widget-ready' id='sidebar' name='Sidebar' showaddelement='yes'>
-          <b:widget id='AdSense1' locked='false' title='' type='AdSense' visible='true'>
+          <b:widget id='AdSense1' locked='false' title='' type='AdSense' version='2' visible='true'>
             <b:widget-settings>
               <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
               <b:widget-setting name='style.textcolor'>#ffffff</b:widget-setting>
@@ -2382,24 +2413,14 @@ body#layout #vtrick-pro-cta2-section > h4:after{content:' - Right Call to Action
     </b:if>
   </div>
 </b:includable>
-          </b:widget>
-          <b:widget id='HTML2' locked='false' title='{ads}' type='HTML' version='2' visible='false'>
-            <b:widget-settings>
-              <b:widget-setting name='content'><![CDATA[<div style="background:var(--content-bg);padding:0.5rem;border-radius:8px">
-<a style="height:100%;border:none;box-shadow:var(--card-shadow)" class="ads-here entry-image-wrap" href="https://www.vietrick.com/apps/" ><svg class="entry-thumb" data-image="https://1.bp.blogspot.com/-VoL8q35ZUOg/YRYzY42LWKI/AAAAAAAAE00/JqjP57nflFMfwsv2WwfPtAI89mSZ4bXugCNcBGAsYHQ/w72-h72-p-k-no-nu/vietrick-utility.png" viewbox="0 0 16 9"/></svg></a>
-
-<div style="padding:1rem 1rem 0.5rem">
-<span style="
-    font-size: 10px;
-    font-weight: bold;
-    color: #2196f3;
-">SPONSOR</span>
-<p style="font-size:12px"><strong>Vietrick Apps <i style="color:#2196f3" class="bi bi-check-circle-fill"></i></strong> - Bộ công cụ tiện ích phát triển bởi Vietrick.</p>
-</div></div>]]></b:widget-setting>
-            </b:widget-settings>
-            <b:includable id='main'>
-      <b:include name='html-content'/>
-    </b:includable>
+            <b:includable id='defaultAdUnit'>
+  <ins class='adsbygoogle' data-ad-format='auto' expr:data-ad-client='data:adClientId ?: data:blog.adsenseClientId' expr:data-ad-host='data:blog.adsenseHostId' expr:style='data:style ?: &quot;display: block;&quot;'>
+    <b:attr cond='not data:blog.analytics4' expr:value='data:blog.analyticsAccountNumber' name='data-analytics-uacct'/>
+  </ins>
+  <script>
+   (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</b:includable>
           </b:widget>
           <b:widget id='PopularPosts2' locked='false' title='Popular Posts' type='PopularPosts' version='2' visible='false'>
             <b:widget-settings>
